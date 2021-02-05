@@ -33,7 +33,9 @@ Napi::Value editDistance(const Napi::CallbackInfo& info) {
       }
       prev = curr;
   }
-  Napi::Number num = Napi::Number::New(env, prev[m]);
+  int dist = prev[m];
+  double similarity = 100.0 - (dist * 100.0) / std::max(n,m);
+  Napi::Number num = Napi::Number::New(env, similarity);
   return num;
 }
 

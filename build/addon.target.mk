@@ -47,7 +47,7 @@ INCS_Debug := \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/uv/include \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/zlib \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/v8/include \
-	-I/home/mayank/node-addon-examples/2_function_arguments/node-addon-api/node_modules/node-addon-api
+	-I/home/mayank/editDistance/node_modules/node-addon-api
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
@@ -91,7 +91,7 @@ INCS_Release := \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/uv/include \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/zlib \
 	-I/home/mayank/.cache/node-gyp/15.5.1/deps/v8/include \
-	-I/home/mayank/node-addon-examples/2_function_arguments/node-addon-api/node_modules/node-addon-api
+	-I/home/mayank/editDistance/node_modules/node-addon-api
 
 OBJS := \
 	$(obj).target/$(TARGET)/addon.o
